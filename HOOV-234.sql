@@ -1,25 +1,32 @@
-DROP TABLE IF EXISTS `product_characteristics`;
-CREATE TABLE `product_characteristics` (
-  `productid` bigint(20) unsigned NOT NULL,
-  `egg_color_Blue` tinyint(1) DEFAULT NULL,
-  `egg_color_Brown` tinyint(1) DEFAULT NULL,
-  `egg_color_Cream` tinyint(1) DEFAULT NULL,
-  `egg_color_Dark_Brown` tinyint(1) DEFAULT NULL,
-  `egg_color_Olive` tinyint(1) DEFAULT NULL,
-  `egg_color_White` tinyint(1) DEFAULT NULL,
-  `egg_size_Small` tinyint(1) DEFAULT NULL,
-  `egg_size_Medium` tinyint(1) DEFAULT NULL,
-  `egg_size_Large` tinyint(1) DEFAULT NULL,
-  `egg_size_XLarge` tinyint(1) DEFAULT NULL,
-  `egg_per_year_100_150` tinyint(1) DEFAULT NULL,
-  `egg_per_year_150_200` tinyint(1) DEFAULT NULL,
-  `egg_per_year_200_250` tinyint(1) DEFAULT NULL,
-  `egg_per_year_250_300` tinyint(1) DEFAULT NULL,
-  `Winter_Hardy` tinyint(1) DEFAULT NULL,
-  `Warm_Climate_Hardy` tinyint(1) DEFAULT NULL,
-  `Breeds_True` tinyint(1) DEFAULT NULL,
-  `Heritage` tinyint(1) DEFAULT NULL,
-  `Free_Ranges_Best` tinyint(1) DEFAULT NULL,
-  PRIMARY KEY (`productid`),
-  CONSTRAINT `product_characteristics_ibfk_1` FOREIGN KEY (`productid`) REFERENCES `product` (`productid`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COMMENT='HOOV--234 Filter Task ';
+CREATE TABLE product_characteristics
+(
+    	productid bigint(20) unsigned,
+
+	egg_color_Blue boolean,
+	egg_color_Brown boolean, 
+	egg_color_Cream boolean, 
+	egg_color_Dark_Brown boolean, 
+	egg_color_Olive boolean,  
+	egg_color_White boolean,  
+	
+	egg_size_Small boolean,
+	egg_size_Medium boolean,
+	egg_size_Large boolean,
+	egg_size_XLarge  boolean,
+
+	 egg_per_year_100_150 boolean,
+	 egg_per_year_150_200 boolean,
+	 egg_per_year_200_250 boolean,
+	 egg_per_year_250_300 boolean,
+
+	 Winter_Hardy boolean,
+	 Warm_Climate_Hardy boolean,
+	 Breeds_True boolean,
+	Heritage boolean,
+	Free_Ranges_Best  boolean,
+
+    PRIMARY KEY(productid),
+    FOREIGN KEY (productid) REFERENCES product(productid)
+)
+
+
