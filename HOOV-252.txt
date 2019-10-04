@@ -1,0 +1,7 @@
+1) HatcheryMgr/src/java/struts.xml
+2) HatcheryMgr/web/WEB-INF/tiles.xml
+3) HatcheryMgr/src/java/com/mitchclaborn/hatcherymgr/action/client/birds/ActualEggsetImportPage.java
+4) HatcheryMgr/web/WEB-INF/layouts/client/birds/birds_actual_eggset_import.jsp
+5) GreenfireApp/src/com/mitchclaborn/gf/app/AvailFunctions.java
+6) GreenfireLib/src/com/mitchclaborn/gf/lib/Hatch.java
+7) GreenfireDB/src/com/mitchclaborn/gf/db/HatchDB.java
